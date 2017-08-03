@@ -1,0 +1,6 @@
+c:\users\artemis\documents\visual studio 2017\Projects\Parser for Peptide Count\Parser for Peptide Count\bin\Debug\Parser for Peptide Count.exe.config
+c:\users\artemis\documents\visual studio 2017\Projects\Parser for Peptide Count\Parser for Peptide Count\bin\Debug\Parser for Peptide Count.exe
+c:\users\artemis\documents\visual studio 2017\Projects\Parser for Peptide Count\Parser for Peptide Count\bin\Debug\Parser for Peptide Count.pdb
+c:\users\artemis\documents\visual studio 2017\Projects\Parser for Peptide Count\Parser for Peptide Count\obj\Debug\Parser for Peptide Count.exe
+c:\users\artemis\documents\visual studio 2017\Projects\Parser for Peptide Count\Parser for Peptide Count\obj\Debug\Parser for Peptide Count.pdb
+c:\users\artemis\documents\visual studio 2017\Projects\Parser for Peptide Count\Parser for Peptide Count\obj\Debug\Parser for Peptide Count.csprojResolveAssemblyReference.cache
