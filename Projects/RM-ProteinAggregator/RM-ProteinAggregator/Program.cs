@@ -10,6 +10,12 @@ namespace RM_ProteinAggregator
     {
         static void Main(string[] args)
         {
-            IDictionary<string, IList<Modification>> allKnownModifications; }
+            bool generateDecoys= true;
+            IDictionary<string, IList<Modification>> allKnownModifications;
+            bool IsContaminant =false;
+            out Dictionary<string, Modification> unknownModifications;
+            List<Protein> proteins = ProteinDbLoader.LoadProteinDb("proteins.xml", generateDecoys, allKnownModifications, IsContaminant, out unknownModifications);
+            
+
          }
     } 
