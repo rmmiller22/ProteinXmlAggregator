@@ -9,16 +9,31 @@ namespace aggregatemyfiles
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string dirPath, string filePattern, string destFile)
         {
-            string trypsin = @"E:\RMM\Jurkat Pruned Multiprotease databases\Trypsin\uniprot-proteome%3AUP000005640.xml-Jurkat_SAV_DBGPTMDproteinPruned.xml";
-            string argC = @"E:\RMM\Jurkat Pruned Multiprotease databases\ArgC\Jurkat_SAV_DB-uniprot-proteome%3AUP000005640.xmlGPTMDproteinPruned.xml";
-            string aspN = @"E:\RMM\Jurkat Pruned Multiprotease databases\AspN\Jurkat_SAV_DB-uniprot-proteome%3AUP000005640.xmlGPTMDproteinPruned.xml";
-            string chym = @"E:\RMM\Jurkat Pruned Multiprotease databases\Chym\uniprot-proteome%3AUP000005640.xml-Jurkat_SAV_DBGPTMDproteinPruned.xml";
-            string lysC = @"E:\RMM\Jurkat Pruned Multiprotease databases\LysC\uniprot-proteome%3AUP000005640.xml-Jurkat_SAV_DBGPTMDproteinPruned.xml";
-            string gluC = @"E:\RMM\Jurkat Pruned Multiprotease databases\GluC\uniprot-proteome%3AUP000005640.xml-Jurkat_SAV_DBGPTMDproteinPruned.xml";
-            string aggregatedDatabase = Path.Combine(trypsin, argC, aspN, chym, lysC, gluC);
-            Console.WriteLine(aggregatedDatabase);
+
+                string[] fileAry = Directory.GetFiles(@"E:\RMM\Testtxts", ".txt");
+
+                Console.WriteLine("Total File Count : " + fileAry.Length);
+
+                using (TextWriter tw = new StreamWriter(destFile, true))
+                {
+                    foreach (string filePath in fileAry)
+                    {
+                        using (TextReader tr = new StreamReader(filePath))
+                        {
+                            tw.WriteLine(tr.ReadToEnd());
+                            tr.Close();
+                            tr.Dispose();
+                        }
+                        Console.WriteLine("File Processed : " + filePath);
+                    }
+
+                    tw.Close();
+                    tw.Dispose();
+                }
+            }
+
         }
     }
-}
+
