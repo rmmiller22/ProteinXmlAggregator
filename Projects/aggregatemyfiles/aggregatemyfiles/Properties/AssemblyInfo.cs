@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ProteinAggregator")]
+[assembly: AssemblyTitle("aggregatemyfiles")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("ProteinAggregator")]
+[assembly: AssemblyProduct("aggregatemyfiles")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("542908f2-890a-448e-a0c7-8211c4b10e6e")]
+[assembly: Guid("e547a9a4-d35b-4f37-8735-dd37ae6156e5")]
 
 // Version information for an assembly consists of the following four values:
 //
